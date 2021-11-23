@@ -1,0 +1,76 @@
+@import 'shared.scss';
+
+$border-color: #eee;
+
+body {
+  padding-top: 0;
+  background-color: #f6f6f6;
+}
+
+.profile-preview__profile-container {
+  height: 100%;
+  overflow: auto;
+}
+
+.top-card-description {
+  margin-top: 10px;
+}
+
+.top-card-link__logo {
+  border: 0;
+  width: 22px;
+}
+
+.top-card-link {
+  display: inline-block;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+  &:first-child {
+    margin-left: -2px;
+  }
+}
+
+.top-card-layout__title-right {
+  margin-bottom: 10px;
+}
+
+.top-card-layout__entity-image {
+  box-shadow: none;
+}
+
+@media screen and (min-width: $mobile-width) {
+  html {
+    zoom: 1.2;
+  }
+  body {
+    padding-top: 50px;
+  }
+  .profile-preview__profile-container {
+    overflow: auto;
+    width: 720px;
+    margin: 0 auto;
+  }
+  .top-card-layout {
+    box-shadow: none;
+    border: 1px solid $border-color;
+  }
+  .top-card-links {
+    margin: -60px 0 0 16px;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .profile-preview__profile-container {
+    border-bottom: 2px solid $border-color;
+  }
+  .top-card-layout__title-right {
+    margin-top: 10px;
+  }
+  .top-card-link:not(:first-child) {
+    margin-left: 12px;
+  }
+  .top-card-links {
+    margin: -12px 0 0 14px;
+  }
+}

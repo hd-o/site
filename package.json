@@ -1,0 +1,25 @@
+{
+  "name": "hadrian-site",
+  "version": "1.0.0",
+  "description": "Hadrian's Website",
+  "main": "dist/index.html",
+  "scripts": {
+    "start": "parcel serve ./src/index.html --no-cache",
+    "build": "parcel build ./src/index.html --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hd-o/site.git"
+  },
+  "author": "Hadrian de Oliveira",
+  "license": "MIT",
+  "homepage": "https://hadriandeoliveira.com",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.3.1",
+    "posthtml-expressions": "^1.7.1",
+    "posthtml-modules": "^0.7.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-nightly.681"
+  }
+}
