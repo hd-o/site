@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/image/avatar.ico">
-    <title>Hadrian de Oliveira</title>
+    <title translate="no">Hadrian de Oliveira</title>
     <meta name="description" content="Hadrian's Website">
     <link rel="stylesheet" href="assets/css/styles.scss">
     <link rel="stylesheet" href="assets/css/custom.scss">
@@ -20,25 +20,21 @@
           </div>
           <div class="top-card-layout__entity-info-container">
             <div class="top-card-layout__entity-info">
-              <h1 class="top-card-layout__title">
+              <h1 class="top-card-layout__title" translate="no">
                 Hadrian de Oliveira
               </h1>
-              <h4 class="top-card-description top-card-layout__second-subline">
-                <p>
-                  💻 Software Engineer<br/>
-                  ✅ Project Manager
-                </p>
-              </h4>
+              <h2 class="top-card-description top-card-layout__second-subline">
+                <p id="expertise.software_engineer">💻 Software Engineer</p>
+                <p id="expertise.project_manager">✅ Project Manager</p>
+              </h2>
             </div>
             <div class="top-card-layout__entity-info">
               <div class="top-card__links-container">
-                <h2 class="top-card-layout__title top-card-layout__title-right">
+                <h2 id="research.heading" class="top-card-layout__title top-card-layout__title-right">
                   Research Areas
                 </h2>
-                <p>
-                  🏛️ Software Architecture<br/>
-                  🎎 Behavioral Economics
-                </p>
+                <p id="research.software_architecture">🏛️ Software Architecture</p>
+                <p id="research.behavioral_economics">🎎 Behavioral Economics</p>
               </div>
             </div>
           </div>
@@ -46,4 +42,13 @@
       </section>
     </div>
   </body>
+  <script type="application/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      if (navigator.languages.includes('pt-BR')) {
+        import('./assets/lang/pt-BR.json').then(ptBr => {
+          for (const key in ptBr) document.getElementById(key).innerText = ptBr[key]
+        })
+      }
+    })
+  </script>
 </html>
