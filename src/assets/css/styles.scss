@@ -6,6 +6,7 @@ $mobile-width: 768px;
     --background-color: #181a1b;
     --border-color: #35393b;
     --color: #d3d3d0;
+    --link-color: #62a5c8;
   }
 }
 
@@ -15,6 +16,7 @@ $mobile-width: 768px;
     --background-color: #f6f6f6;
     --border-color: #eee;
     --color: #161616;
+    --link-color: #4180a2;
   }
 }
 
@@ -41,12 +43,11 @@ body {
 }
 
 a {
-  background-color: transparent;
-  color: #62a5c8;
+  color: var(--link-color);
   text-decoration: none;
 }
 
-a:hover,æ
+a:hover,
 a:focus {
   text-decoration: underline;
   color: #006097;
