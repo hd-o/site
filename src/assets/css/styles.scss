@@ -6,7 +6,7 @@ $mobile-width: 768px;
     --background-color: #181a1b;
     --border-color: #35393b;
     --color: #d3d3d0;
-    --link-color: #62a5c8;
+    --link-color: #7a8c95;
   }
 }
 
@@ -16,7 +16,7 @@ $mobile-width: 768px;
     --background-color: #f6f6f6;
     --border-color: #eee;
     --color: #161616;
-    --link-color: #4180a2;
+    --link-color: #7a8c95;
   }
 }
 
@@ -201,6 +201,10 @@ p {
   margin: 4px 16px 0 0;
 }
 
+.links-container {
+  margin-top: 5px;
+}
+
 @media (max-width: $mobile-width) {
   .top-card-layout__card {
     padding: 16px;
@@ -307,9 +311,6 @@ p {
   }
   .cover-img__image-frame {
     padding-bottom: 80px;
-  }
-  .links-container {
-    margin-top: 5px;
   }
 }
 
