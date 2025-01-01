@@ -271,9 +271,6 @@ p {
 }
 
 @media screen and (min-width: $mobile-width) {
-  body {
-    padding-top: 50px;
-  }
   p {
     text-wrap: nowrap;
   }
@@ -285,6 +282,7 @@ p {
   .top-card-layout {
     box-shadow: none;
     border: 1px solid var(--border-color);
+    margin-top: 50px;
   }
   .top-card-links {
     margin: -60px 0 0 16px;
