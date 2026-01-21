@@ -1,9 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-aria-label="Instagram" role="img"
-viewBox="0 0 512 512"><rect
-width="512" height="512"
-rx="15%"
-id="b"/><use fill="url(#a)" xlink:href="#b"/><use fill="url(#c)" xlink:href="#b"/><radialGradient
-id="a" cx=".4" cy="1" r="1"><stop offset=".1" stop-color="#fd5"/><stop offset=".5" stop-color="#ff543e"/><stop offset="1" stop-color="#c837ab"/></radialGradient><linearGradient
-id="c" x2=".2" y2="1"><stop offset=".1" stop-color="#3771c8"/><stop offset=".5" stop-color="#60f" stop-opacity="0"/></linearGradient><g
-fill="none" stroke="#fff" stroke-width="30"><rect width="308" height="308" x="102" y="102" rx="81"/><circle cx="256" cy="256" r="72"/><circle cx="347" cy="165" r="6"/></g></svg>
+<svg id="Instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>.bg{fill:#E1306C;}.fg{fill:#fff;}</style>
+  </defs>
+  <rect class="bg" x="3" y="3" width="122" height="122" rx="16" ry="16"/>
+  <path class="fg" d="M86.5 39.5h-45A6 6 0 0 0 35.5 45.5v37a6 6 0 0 0 6 6h45a6 6 0 0 0 6-6v-37a6 6 0 0 0-6-6zm-22.5 45.8a11.8 11.8 0 1 1 11.8-11.8 11.8 11.8 0 0 1-11.8 11.8zm15.8-27.3a3.2 3.2 0 1 1 3.2-3.2 3.2 3.2 0 0 1-3.2 3.2zM64 57.3a8.7 8.7 0 1 0 8.7 8.7A8.7 8.7 0 0 0 64 57.3z"/>
+</svg>
