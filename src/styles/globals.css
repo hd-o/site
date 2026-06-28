@@ -1,3 +1,5 @@
+@import '@fontsource-variable/geist';
+@import '@fontsource/geist-mono';
 @import 'tailwindcss';
 
 @custom-variant dark (&:is(.dark *));
@@ -30,6 +32,8 @@
 }
 
 :root {
+  --font-geist-sans: 'Geist Variable', system-ui, sans-serif;
+  --font-geist-mono: 'Geist Mono', 'Courier New', monospace;
   color-scheme: light;
   --radius: 0.625rem;
   --background: #f9f8f8;

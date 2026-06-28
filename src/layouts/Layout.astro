@@ -1,0 +1,31 @@
+---
+import '../styles/globals.css'
+
+export interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = 'Hadrian de Oliveira',
+  description = 'Software Engineer',
+} = Astro.props
+---
+
+<!doctype html>
+<html lang="en" class="bg-background">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/profile.png" />
+    <link rel="apple-touch-icon" href="/profile.png" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf9f8" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1f1f1f" />
+  </head>
+  <body class="font-sans antialiased">
+    <slot />
+  </body>
+</html>
