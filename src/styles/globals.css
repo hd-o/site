@@ -36,10 +36,28 @@
   --font-geist-mono: 'Geist Mono', 'Courier New', monospace;
   color-scheme: light;
   --radius: 0.625rem;
-  --background: #f9f8f8;
+  --background: rgb(249, 248, 248);
   --foreground: #161616;
   --primary: #ededed;
   --border: #e4dbde;
+}
+
+body {
+  background-image: url('/bg.png');
+  background-size: contain;
+  background-position: center 102%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-position: center 100%;
+    background-size: 200%;
+  }
+}
+
+body>main {
+  background: linear-gradient(to bottom, var(--background) 0%, rgba(249, 248, 248, 0.8) 100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +67,10 @@
     --foreground: #eeeeee;
     --primary: #222222;
     --border: #333333;
+  }
+
+  body>main {
+    background: linear-gradient(to bottom, var(--background) 0%, rgba(0, 0, 0, 0.8) 100%);
   }
 }
 
